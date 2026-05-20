@@ -51,7 +51,12 @@ export default function TopNav() {
           </Link>
           <nav className="hidden items-center gap-6 font-mono text-[11px] uppercase tracking-[0.2em] text-muted md:flex">
             <Link href="/browse" className="transition-colors hover:text-text">Browse</Link>
-            <Link href="#why-me" className="transition-colors hover:text-text">Why Me</Link>
+            <button
+              onClick={() => document.getElementById("why-me")?.scrollIntoView({ behavior: "smooth" })}
+              className="transition-colors hover:text-text"
+            >
+              Why Me
+            </button>
             <Link href="/about" className="transition-colors hover:text-text">About</Link>
           </nav>
         </div>

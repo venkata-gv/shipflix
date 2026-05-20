@@ -104,8 +104,10 @@ export const PROJECTS: Project[] = [
     year: 2025,
     runtime: "6 min read",
     status: "live",
-    liveUrl: "https://evidenceiq.vercel.app",
+    liveUrl: "https://evidenceiq-psi.vercel.app",
     repoUrl: "https://github.com/surendra-gvsr/my-project-ui",
+    preview: "/projects/evidenceiq/preview.webm",
+    poster: "/projects/evidenceiq/poster.webp",
     hero: {
       gradient:
         "radial-gradient(at 70% 30%, #1E3A5F 0%, #0B0B0F 60%), linear-gradient(135deg, #0F1B2D 0%, #0B0B0F 100%)",
@@ -156,6 +158,8 @@ export const PROJECTS: Project[] = [
     status: "live",
     liveUrl: "https://dora-mifid-compliance.vercel.app",
     repoUrl: "https://github.com/surendra-gvsr/dora-mifid-compliance",
+    preview: "/projects/dora-mifid/preview.webm",
+    poster: "/projects/dora-mifid/poster.webp",
     hero: {
       gradient:
         "radial-gradient(at 50% 0%, #312E81 0%, #0B0B0F 60%), linear-gradient(135deg, #1E1B4B 0%, #0B0B0F 100%)",
@@ -207,6 +211,8 @@ export const PROJECTS: Project[] = [
     runtime: "11 min read",
     status: "shipped",
     repoUrl: "https://github.com/surendra-gvsr/sarops-agent",
+    preview: "/projects/sarops/preview.webm",
+    poster: "/projects/sarops/poster.webp",
     hero: {
       gradient:
         "radial-gradient(at 20% 80%, #7F1D1D 0%, #0B0B0F 60%), linear-gradient(135deg, #450A0A 0%, #0B0B0F 100%)",
@@ -310,8 +316,11 @@ export const PROJECTS: Project[] = [
       "Business decision tool that models 4 scenarios, generates a 6–8 phase rollout playbook, and falls back to a bundled sample when no key is set.",
     year: 2025,
     runtime: "5 min read",
-    status: "shipped",
+    status: "live",
+    liveUrl: "https://ai-roi-calculator-fawn.vercel.app",
     repoUrl: "https://github.com/surendra-gvsr/ai-roi-calculator",
+    preview: "/projects/roi-calc/preview.webm",
+    poster: "/projects/roi-calc/poster.webp",
     hero: {
       gradient:
         "radial-gradient(at 40% 70%, #78350F 0%, #0B0B0F 60%), linear-gradient(135deg, #451A03 0%, #0B0B0F 100%)",

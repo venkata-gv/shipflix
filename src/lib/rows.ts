@@ -56,7 +56,7 @@ export const PERSONA_CONFIG: Record<Persona, PersonaConfig> = {
   engineer: {
     heroSlugs: ["filingsiq", "sarops", "data-port"],
     rows: [baseRows.rag, baseRows.agentic, baseRows.mcp, baseRows.live, baseRows.compliance],
-    showWhyMe: false,
+    showWhyMe: true,
     showTokenEconRow: true,
   },
   founder: {
