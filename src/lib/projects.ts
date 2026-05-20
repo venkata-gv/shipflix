@@ -50,6 +50,8 @@ export const PROJECTS: Project[] = [
     status: "live",
     liveUrl: "https://filingsiq.vercel.app",
     repoUrl: "https://github.com/surendra-gvsr/sec-analyzer",
+    preview: "/projects/filingsiq/preview.webm",
+    poster: "/projects/filingsiq/poster.webp",
     hero: {
       gradient:
         "radial-gradient(at 30% 20%, #064E3B 0%, #0B0B0F 60%), linear-gradient(135deg, #022C22 0%, #0B0B0F 100%)",
