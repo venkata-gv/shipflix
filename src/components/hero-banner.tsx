@@ -38,6 +38,15 @@ export default function HeroBanner({ projects }: { projects: Project[] }) {
           className="absolute inset-0"
           style={{ background: p.hero.gradient }}
         >
+          {/* Poster always visible — video fades in on top */}
+          {p.poster && (
+            <img
+              src={p.poster}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 h-full w-full object-cover opacity-75"
+            />
+          )}
           {p.preview && (
             <VideoPreview
               src={p.preview}

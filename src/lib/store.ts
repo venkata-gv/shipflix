@@ -3,7 +3,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-export type Persona = "recruiter" | "hiring-manager" | "engineer" | "founder";
+export type Persona = "recruiter" | "hiring-manager";
 
 type State = {
   persona: Persona | null;
@@ -26,6 +26,6 @@ export const useShipFlix = create<State>()(
       toggleSound: () => set((s) => ({ soundEnabled: !s.soundEnabled })),
       reset: () => set({ persona: null, bootSeen: false }),
     }),
-    { name: "shipflix-state", version: 1 },
+    { name: "shipflix-state", version: 2 },
   ),
 );

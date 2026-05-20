@@ -42,6 +42,15 @@ export function ProjectCard({ project }: { project: Project; index?: number }) {
           className="relative aspect-[16/10] w-full overflow-hidden"
           style={{ background: project.hero.gradient }}
         >
+          {/* Poster visible by default — replaced by video on hover */}
+          {project.poster && (
+            <img
+              src={project.poster}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 group-hover/card:opacity-0"
+            />
+          )}
           {project.preview && (
             <VideoPreview
               src={project.preview}
@@ -50,14 +59,19 @@ export function ProjectCard({ project }: { project: Project; index?: number }) {
               hoverTarget={cardRef}
             />
           )}
-          <div
-            className="pointer-events-none absolute right-4 top-4 h-24 w-24 rounded-2xl border opacity-30"
-            style={{ borderColor: project.hero.accent }}
-          />
-          <div
-            className="pointer-events-none absolute right-8 top-8 h-16 w-16 rounded-xl opacity-20"
-            style={{ background: project.hero.accent }}
-          />
+          {/* Accent decoration — only shown when no poster */}
+          {!project.poster && (
+            <>
+              <div
+                className="pointer-events-none absolute right-4 top-4 h-24 w-24 rounded-2xl border opacity-30"
+                style={{ borderColor: project.hero.accent }}
+              />
+              <div
+                className="pointer-events-none absolute right-8 top-8 h-16 w-16 rounded-xl opacity-20"
+                style={{ background: project.hero.accent }}
+              />
+            </>
+          )}
 
           {project.status === "live" && (
             <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-md border border-gold/50 bg-bg/70 px-2 py-1 backdrop-blur-md">

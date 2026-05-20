@@ -17,11 +17,14 @@ export default function BrowseShell() {
   const router = useRouter();
   const persona = useShipFlix((s) => s.persona);
 
-  useEffect(() => {
-    if (persona === null) router.replace("/");
-  }, [persona, router]);
+  const config = useMemo(
+    () => (persona ? (PERSONA_CONFIG as Record<string, (typeof PERSONA_CONFIG)[keyof typeof PERSONA_CONFIG] | undefined>)[persona] ?? null : null),
+    [persona],
+  );
 
-  const config = useMemo(() => (persona ? PERSONA_CONFIG[persona] : null), [persona]);
+  useEffect(() => {
+    if (persona === null || config === null) router.replace("/");
+  }, [persona, config, router]);
   const featured = useMemo(() => {
     if (!config) return [];
     return config.heroSlugs

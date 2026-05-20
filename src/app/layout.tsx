@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ShipFlix — Streaming production-grade AI",
     description:
-      "6 shipped GenAI projects. 4 personas. Token-aware engineering. Built by Surendra.",
+      "6 shipped GenAI projects. Token-aware engineering. Built by Surendra.",
     type: "website",
   },
   twitter: { card: "summary_large_image" },

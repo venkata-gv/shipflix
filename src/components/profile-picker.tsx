@@ -57,7 +57,7 @@ export default function ProfilePicker() {
         Pick a profile · the binge adapts to you
       </motion.p>
 
-      <div className="grid w-full max-w-5xl grid-cols-2 gap-6 md:grid-cols-4">
+      <div className="grid w-full max-w-2xl grid-cols-2 gap-8">
         {PERSONAS.map((p, i) => {
           const Icon = p.icon;
           return (

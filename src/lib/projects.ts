@@ -54,7 +54,7 @@ export const PROJECTS: Project[] = [
     poster: "/projects/filingsiq/poster.webp",
     hero: {
       gradient:
-        "radial-gradient(at 30% 20%, #064E3B 0%, #0B0B0F 60%), linear-gradient(135deg, #022C22 0%, #0B0B0F 100%)",
+        "radial-gradient(ellipse at 30% 25%, #059669 0%, #064E3B 45%, #0B0B0F 100%), linear-gradient(135deg, #047857 0%, #022C22 50%, #0B0B0F 100%)",
       accent: "#10B981",
     },
     categories: ["rag"],
@@ -110,7 +110,7 @@ export const PROJECTS: Project[] = [
     poster: "/projects/evidenceiq/poster.webp",
     hero: {
       gradient:
-        "radial-gradient(at 70% 30%, #1E3A5F 0%, #0B0B0F 60%), linear-gradient(135deg, #0F1B2D 0%, #0B0B0F 100%)",
+        "radial-gradient(ellipse at 70% 30%, #2563EB 0%, #1E3A5F 45%, #0B0B0F 100%), linear-gradient(135deg, #1D4ED8 0%, #0F1B2D 50%, #0B0B0F 100%)",
       accent: "#60A5FA",
     },
     categories: ["multi-agent"],
@@ -162,7 +162,7 @@ export const PROJECTS: Project[] = [
     poster: "/projects/dora-mifid/poster.webp",
     hero: {
       gradient:
-        "radial-gradient(at 50% 0%, #312E81 0%, #0B0B0F 60%), linear-gradient(135deg, #1E1B4B 0%, #0B0B0F 100%)",
+        "radial-gradient(ellipse at 50% 0%, #7C3AED 0%, #312E81 45%, #0B0B0F 100%), linear-gradient(135deg, #6D28D9 0%, #1E1B4B 50%, #0B0B0F 100%)",
       accent: "#A78BFA",
     },
     categories: ["rag", "agents", "compliance"],
@@ -215,7 +215,7 @@ export const PROJECTS: Project[] = [
     poster: "/projects/sarops/poster.webp",
     hero: {
       gradient:
-        "radial-gradient(at 20% 80%, #7F1D1D 0%, #0B0B0F 60%), linear-gradient(135deg, #450A0A 0%, #0B0B0F 100%)",
+        "radial-gradient(ellipse at 20% 80%, #DC2626 0%, #7F1D1D 45%, #0B0B0F 100%), linear-gradient(135deg, #B91C1C 0%, #450A0A 50%, #0B0B0F 100%)",
       accent: "#F87171",
     },
     categories: ["agents"],
@@ -271,7 +271,7 @@ export const PROJECTS: Project[] = [
     repoUrl: "https://github.com/surendra-gvsr/unified-enterprise-data-port",
     hero: {
       gradient:
-        "radial-gradient(at 80% 80%, #155E75 0%, #0B0B0F 60%), linear-gradient(135deg, #083344 0%, #0B0B0F 100%)",
+        "radial-gradient(ellipse at 75% 75%, #0891B2 0%, #164E63 45%, #0B0B0F 100%), linear-gradient(135deg, #0E7490 0%, #083344 50%, #0B0B0F 100%)",
       accent: "#22D3EE",
     },
     categories: ["mcp", "compliance"],
@@ -323,7 +323,7 @@ export const PROJECTS: Project[] = [
     poster: "/projects/roi-calc/poster.webp",
     hero: {
       gradient:
-        "radial-gradient(at 40% 70%, #78350F 0%, #0B0B0F 60%), linear-gradient(135deg, #451A03 0%, #0B0B0F 100%)",
+        "radial-gradient(ellipse at 40% 70%, #D97706 0%, #78350F 45%, #0B0B0F 100%), linear-gradient(135deg, #B45309 0%, #451A03 50%, #0B0B0F 100%)",
       accent: "#FBBF24",
     },
     categories: ["business"],
